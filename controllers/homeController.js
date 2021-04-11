@@ -12,7 +12,7 @@ exports.index = async (req, res) => {
     const postFilter = (typeof data.tag != 'undefined') ? {tags:data.tag} : {}
 
     const tagsPromisse = Post.getTagsList()
-    const postsPromisse = Post.findPosts( postFilter );
+    const postsPromisse = Post.find( postFilter ).populate( 'author' );
 
     const [ tags, posts ] = await Promise.all([tagsPromisse, postsPromisse])
 

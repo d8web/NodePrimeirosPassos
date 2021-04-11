@@ -30,12 +30,12 @@
     
     {{#flashes}}
         {{#success}}
-            <div class="uk-container uk-background-primary uk-margin uk-padding-small">{{.}}</div>
+            <div class="uk-container uk-background-primary uk-margin uk-padding-small" style="color: #fff;">{{.}}</div>
         {{/success}}
         {{#error}}
-            <div class="uk-container uk-background-danger uk-margin uk-padding-small">{{.}}</div>
+            <div class="uk-container uk-background-danger uk-margin uk-padding-small" style="color: #fff;">{{.}}</div>
         {{/error}}
         {{#info}}
-            <div class="uk-container uk-background-default uk-margin uk-padding-small">{{.}}</div>
+            <div class="uk-container uk-background-default uk-margin uk-padding-small" style="color: #fff;">{{.}}</div>
         {{/info}}
     {{/flashes}}
