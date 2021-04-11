@@ -1,0 +1,31 @@
+{{> header}}
+
+<main class="uk-container">
+    <h2>Adicionar Post</h2>
+
+    <form method="POST" class="uk-width-1-1" enctype="multipart/form-data">
+        <div class="uk-margin">
+            <div uk-form-custom>
+                <input type="file" name="photo">
+                <button class="uk-button uk-button-default" type="button" tabindex="-1">Selecionar Foto</button>
+            </div>
+        </div>
+        <div class="uk-width-1-1 uk-margin">
+            <span>Titulo</span><br>
+            <input type="text" class="uk-width-large uk-input" name="title">
+        </div>
+        <div class="uk-width-1-1 uk-margin">
+            <span>Corpo</span><br>
+            <textarea class="uk-width-large uk-input" name="body"></textarea>
+        </div>
+        <div class="uk-width-1-1 uk-margin">
+            <span>Tags </span><small>(Separar as tags por vírgula)</small><br>
+            <input type="text" class="uk-width-large uk-input" name="tags" />
+        </div>
+        <div>
+            <input type="submit" class="uk-button uk-button-primary" value="Adicionar">
+        </div>
+    </form>
+</main>
+
+{{> footer}}

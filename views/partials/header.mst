@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/template.css">
+    <link rel="stylesheet" href="/assets/css/uikit.min.css" />
+    <title>{{helpers.defaultPageTitle}}</title>
+</head>
+<body>
+    
+    <nav class="uk-background-primary" uk-navbar="mode: click">
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-text-center">
+                {{#helpers.menu}}
+                    <li>
+                        <a style="color: #fff" href="{{slug}}">{{name}}</a>
+                    </li>
+                {{/helpers.menu}}
+                {{#user}}
+                    <li>
+                        <a href="/profile" style="color: #fff;">Olá {{user.name}}!</a>
+                    </li>
+                {{/user}}
+            </ul>
+
+        </div>
+    </nav>
+    
+    {{#flashes}}
+        {{#success}}
+            <div class="uk-container uk-background-primary uk-margin uk-padding-small">{{.}}</div>
+        {{/success}}
+        {{#error}}
+            <div class="uk-container uk-background-danger uk-margin uk-padding-small">{{.}}</div>
+        {{/error}}
+        {{#info}}
+            <div class="uk-container uk-background-default uk-margin uk-padding-small">{{.}}</div>
+        {{/info}}
+    {{/flashes}}

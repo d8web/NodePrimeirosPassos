@@ -1,0 +1,16 @@
+{{> header}}
+
+<main class="uk-container">
+    <h1>Esqueci minha senha</h1>
+    <form method="POST" class="uk-width-1-1">
+        <div class="uk-width-1-1 uk-margin">
+            <span>Email</span><br>
+            <input type="email" class="uk-width-large uk-input" name="email"/>
+        </div>
+        <div>
+            <input type="submit" class="uk-button uk-button-primary" value="Redefinir senha"/>
+        </div>
+    </form>
+</main>
+
+{{> footer}}

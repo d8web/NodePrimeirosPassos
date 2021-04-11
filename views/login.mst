@@ -1,0 +1,21 @@
+{{> header}}
+
+<main class="uk-container">
+    <h1>Login</h1>
+    <form method="POST" class="uk-width-1-1">
+        <div class="uk-width-1-1 uk-margin">
+            <span>Email</span><br>
+            <input type="email" class="uk-width-large uk-input" name="email">
+        </div>
+        <div class="uk-width-1-1 uk-margin">
+            <span>Password</span><br>
+            <input type="password" class="uk-width-large uk-input" name="password">
+        </div>
+        <div>
+            <input type="submit" class="uk-button uk-button-primary" value="Login">
+        </div>
+    </form>
+    <a href="/users/forget">Esqueci minha senha</a>
+</main>
+
+{{> footer}}

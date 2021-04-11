@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    font-family: 'Ping Pong';
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2498f3;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 10px;
+    font-size: 18px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    padding: 20px;
+}
+
+.selected {
+    background-color: red;
+}

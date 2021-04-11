@@ -1,0 +1,37 @@
+{{> header}}
+
+<main class="uk-container">
+    <h2>Meu perfil</h2>
+
+    <form method="POST" class="uk-width-1-1">
+        <div class="uk-width-1-1 uk-margin">
+            <span>Nome completo</span><br>
+            <input type="text" class="uk-width-large uk-input" name="name" value="{{user.name}}" />
+        </div>
+        <div class="uk-width-1-1 uk-margin">
+            <span>Email</span><br>
+            <input type="email" class="uk-width-large uk-input" name="email" value="{{user.email}}" />
+        </div>
+        <div>
+            <input type="submit" class="uk-button uk-button-primary" value="Salvar" />
+        </div>
+    </form>
+    <hr>
+
+    <form method="POST" class="uk-width-1-1" action="/profile/password">
+        <div class="uk-width-1-1 uk-margin">
+            <span>Nova senha</span><br>
+            <input type="password" class="uk-width-large uk-input" name="password" />
+        </div>
+        <div class="uk-width-1-1 uk-margin">
+            <span>Confirmar senha</span><br>
+            <input type="password" class="uk-width-large uk-input" name="password-confirm" />
+        </div>
+        <div>
+            <input type="submit" class="uk-button uk-button-primary" value="Salvar">
+        </div>
+    </form>
+
+</main>
+
+{{> footer}}

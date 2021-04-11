@@ -1,0 +1,10 @@
+{{> header}}
+
+<main class="uk-container">
+    <h1>{{post.title}}</h1>
+    <p>{{post.body}}</p>
+    <hr>
+    <span>{{post.tags}}</span>
+</main>
+
+{{> footer}}
